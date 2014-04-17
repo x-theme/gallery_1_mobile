@@ -10,7 +10,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 	<div class='header'>
 		<div class='inner'>
 					<div id="gallery_1_logo">
-						<a href="<?php echo G5_URL ?>">
+						<a href="<?=g::url()?>">
 						<?if( file_exists( path_logo() ) ) { ?>
 							<img src="<?=url_logo()?>">
 						<?} else {?>
