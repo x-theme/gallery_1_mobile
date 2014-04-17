@@ -1,15 +1,19 @@
 <?xml version="1.0"?>
 <config>
+	<id>gallery mobile 1</id>
 	<type>theme</type>
 	<view>mobile</view>
+	<category>gallery</category>
 	<name>
 		<en>Gallery No. 1 Mobile</en>
 		<ko>Gallery No. 1 Mobile</ko>
 	</name>
 	<version>0.1</version>
+	<author>JaeHo Song</author>
+	<email>thruthesky@gmail.com</email>
 	<short>
-		<en></en>
-		<ko></ko>
+		<en>Gallery Mobile no. 1</en>
+		<ko>Gallery Mobile no. 1</ko>
 	</short>
 	<detail>
 		<en></en>
