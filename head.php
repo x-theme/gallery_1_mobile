@@ -63,7 +63,15 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 			<div style='clear:both'></div>
 		</div>		
 		<div class='gallery_mobile_outlogin_wrapper'>			
-			<?=outlogin('x-outlogin-gallery-mobile');?>			
+		<?php
+			include widget(
+				array(
+					'code'		=> 'login-gallery-mobile',
+					'name'		=> 'login-gallery-mobile',
+					'git'		=> 'https://github.com/x-widget/login-gallery-mobile',
+				)
+			);
+		?>	
 		</div>
 		<div class='main-menu'>
 			<?include_once('main-menu.php');?>
