@@ -96,30 +96,84 @@
 <div class='widget_container'>
 	<div class='widgets tablet top'>
 		<div class='item left'>
-			<?echo latest("x-gallery-mobile-text-with-image", bo_table(1), 4, 50);?>			
+			<?
+				include widget(
+					array(
+						'code'		=> 'x-gallery-mobile-text-with-image-top',
+						'name'		=> 'x-gallery-mobile-text-with-image',
+						'default_forum_id'	=> bo_table(1),
+						'git'		=> 'https://github.com/x-widget/x-gallery-mobile-text-with-image',
+					)
+				);
+			?>		
 		</div>
 		<div class='item right'>
-			<?echo latest("x-gallery-mobile-bulleted-list", bo_table(2), 7, 50);?>
+			<?
+				include widget(
+					array(
+						'code'		=> 'x-gallery-mobile-bulleted-list-top',
+						'name'		=> 'x-gallery-mobile-bulleted-list',
+						'default_forum_id'	=> bo_table(1),
+						'git'		=> 'https://github.com/x-widget/x-gallery-mobile-bulleted-list',
+					)
+				);
+			?>
 		</div>
 		<div style='clear:both'></div>
 	</div>
 	<div class='widgets tablet bottom'>
 		<div class='item left'>
-			<?echo latest("x-gallery-mobile-text-with-image", bo_table(3), 4, 50);?>
+			<?
+				include widget(
+					array(
+						'code'		=> 'x-gallery-mobile-text-with-image-bottom',
+						'name'		=> 'x-gallery-mobile-text-with-image',
+						'default_forum_id'	=> bo_table(1),
+						'git'		=> 'https://github.com/x-widget/x-gallery-mobile-text-with-image',
+					)
+				);
+			?>	
 		</div>
 		<div class='item right'>
-			<?echo latest("x-gallery-mobile-bulleted-list", bo_table(4), 7, 50);?>
+			<?
+				include widget(
+					array(
+						'code'		=> 'x-gallery-mobile-bulleted-list-bottom',
+						'name'		=> 'x-gallery-mobile-bulleted-list',
+						'default_forum_id'	=> bo_table(1),
+						'git'		=> 'https://github.com/x-widget/x-gallery-mobile-bulleted-list',
+					)
+				);
+			?>
 		</div>
 		<div style='clear:both'></div>
 	</div>
 	<div class='widgets smart_phone'>
 		<div>
-			<?echo latest("x-gallery-mobile-image-with-caption", bo_table(1), 2, 20);?>			
+			<?
+				include widget(
+					array(
+						'code'		=> 'x-gallery-mobile-image-with-caption',
+						'name'		=> 'x-gallery-mobile-image-with-caption',
+						'default_forum_id'	=> bo_table(1),
+						'git'		=> 'https://github.com/x-widget/x-gallery-mobile-image-with-caption',
+					)
+				);
+			?>
 		</div>
 	</div>
 	<div class='widgets smart_phone'>
 		<div>
-			<?echo latest("x-gallery-mobile-image-with-caption-bottom", bo_table(3), 2, 20);?>			
+			<?
+				include widget(
+					array(
+						'code'		=> 'x-gallery-mobile-image-with-caption-bottom',
+						'name'		=> 'x-gallery-mobile-image-with-caption-bottom',
+						'default_forum_id'	=> bo_table(1),
+						'git'		=> 'https://github.com/x-widget/x-gallery-mobile-image-with-caption-bottom',
+					)
+				);
+			?>
 		</div>
 	</div>
 </div>
