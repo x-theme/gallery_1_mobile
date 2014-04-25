@@ -25,11 +25,17 @@
 					if ( ! $selected ++ ) $first_image = 'selected';
 					else $first_image = '';
 					
-					if ( !$url = $banner['href'] ) $url = "javascript:void(0)";
+					if ( !$url = $banner['href'] ) {
+						$url = "javascript:void(0);";
+						$target = "";
+					}
+					else {
+						$target = "target='_blank'";
+					}
 					?>
 					<div class='banner-image-container image_<?=$selected?> <?=$first_image?>' image_num='<?=$selected?>'>
 						<div class='banner-image'>
-							<a href='<?=$url?>' target='_blank'><img src='<?=$banner['src']?>'></a>
+							<a href='<?=$url?>' <?=$target?>><img src='<?=$banner['src']?>'></a>
 						</div>
 						<div class='banner-content-container'>
 							<div class='triangle-border'></div><div class='triangle'></div>
@@ -39,10 +45,10 @@
 										if( $banner['subject'] ) $banner_subject = cut_str(strip_tags($banner['subject']),50,'...');
 										else $banner_subject = 'No Subject'
 									?>
-									<a href='<?=$url?>' target='_blank'><?=$banner_subject?></a>
+									<a href='<?=$url?>' <?=$target?>><?=$banner_subject?></a>
 								</div>									
 								<div class='banner-content'>
-									<a href='<?=$url?>' target='_blank'><?=cut_str(strip_tags($banner['content']),900,'...')?></a>
+									<a href='<?=$url?>' <?=$target?>><?=cut_str(strip_tags($banner['content']),900,'...')?></a>
 								</div>
 								<a href='<?=$url?>' class='read-more'>자세히 보기 &gt;</a>
 							</div>
@@ -67,17 +73,17 @@
 ?>
 					<div class='banner-image-container image_<?=$selected?> <?=$first_image?>' image_num='<?=$selected?>'>
 						<div class='banner-image'>
-							<a href='<?=$url?>' target='_blank'><img src='<?=$banner['src']?>'></a>
+							<a href='<?=$url?>' ><img src='<?=$banner['src']?>'></a>
 						</div>
 						<div class='banner-content-container'>
 							<div class='triangle-border'></div><div class='triangle'></div>
 							<div class='banner-text'>									
 								<div class='subject'>
 									<? $banner_subject = "회원님게서는 현재...";?>
-									<a href='<?=$url?>' target='_blank'><?=$banner_subject?></a>
+									<a href='<?=$url?>' ><?=$banner_subject?></a>
 								</div>									
 								<div class='banner-content'>
-									<a href='<?=$url?>' target='_blank'>필고 갤러리 모바일 테마 No.1을 선택 하였습니다. <br />
+									<a href='<?=$url?>' >필고 갤러리 모바일 테마 No.1을 선택 하였습니다. <br />
 										메인 배너의 이미지는 <a style='font-weight: bold; color:#355c75;' href='<?=url_site_config()?>'>사이트 관리</a>의 일반 설정에서 배너 이미지를 등록 해 주세요."</a>
 								</div>
 								<a href='<?=$url?>' class='read-more'>자세히 보기 &gt;</a>
